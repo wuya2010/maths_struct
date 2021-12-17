@@ -10,7 +10,12 @@ public class InsertValueSearch {
 //		for(int i = 0; i < 100; i++) {
 //			arr[i] = i + 1;
 //		}
-		
+
+
+		/**
+		 * 插值查找算法
+		 */
+
 		int arr[] = { 1, 8, 10, 89,1000,1000, 1234 };
 		
 		int index = insertValueSearch(arr, 0, arr.length - 1, 1234);
@@ -60,8 +65,10 @@ public class InsertValueSearch {
 			return -1;
 		}
 
-		// 求出mid, 自适应
+		//fixme:  求出mid, 自适应 ==> 这一步怎么来的？
 		int mid = left + (right - left) * (findVal - arr[left]) / (arr[right] - arr[left]);
+
+
 		int midVal = arr[mid];
 		if (findVal > midVal) { // 说明应该向右边递归
 			return insertValueSearch(arr, mid + 1, right, findVal);

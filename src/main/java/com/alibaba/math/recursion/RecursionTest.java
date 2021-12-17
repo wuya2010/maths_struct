@@ -3,6 +3,8 @@ package com.alibaba.math.recursion;
 public class RecursionTest {
 
 	public static void main(String[] args) {
+
+
 		// TODO Auto-generated method stub
 		//通过打印问题，回顾递归调用机制
 		test(4);

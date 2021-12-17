@@ -3,6 +3,11 @@ package com.alibaba.math.sparsearray;
 public class SparseArray {
 
 	public static void main(String[] args) {
+
+		/**
+		 * 稀疏矩阵的获取
+		 */
+
 		// 创建一个原始的二维数组 11 * 11
 		// 0: 表示没有棋子， 1 表示 黑子 2 表蓝子
 		int chessArr1[][] = new int[11][11];
@@ -30,7 +35,7 @@ public class SparseArray {
 		}
 
 		// 2. 创建对应的稀疏数组
-		int sparseArr[][] = new int[sum + 1][3];
+		int sparseArr[][] = new int[sum + 1][3]; // 3对应的 position_x, position_y, value
 		// 给稀疏数组赋值
 		sparseArr[0][0] = 11;
 		sparseArr[0][1] = 11;
@@ -42,6 +47,7 @@ public class SparseArray {
 			for (int j = 0; j < 11; j++) {
 				if (chessArr1[i][j] != 0) {
 					count++;
+					//第0列：i   第1列 ： j
 					sparseArr[count][0] = i;
 					sparseArr[count][1] = j;
 					sparseArr[count][2] = chessArr1[i][j];

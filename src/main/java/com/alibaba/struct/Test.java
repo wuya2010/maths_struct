@@ -15,7 +15,7 @@ public class Test {
 		hashSet2.add("1");
 		hashSet2.add("2");
 		hashSet2.add("200");
-		hashSet1.retainAll(hashSet2);// 
+		hashSet1.retainAll(hashSet2);// 返回元素有交集的数据，否则未空
 		System.out.println("hashSet1=" + hashSet1);//[1,2]
 		
 	}

@@ -5,7 +5,11 @@ import java.util.Scanner;
 public class HashTabDemo {
 
 	public static void main(String[] args) {
-		
+
+		/**
+		 * 哈希表
+		 */
+
 		//创建哈希表
 		HashTab hashTab = new HashTab(7);
 		

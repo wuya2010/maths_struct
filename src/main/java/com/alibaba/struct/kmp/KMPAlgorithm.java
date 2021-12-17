@@ -6,11 +6,12 @@ public class KMPAlgorithm {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String str1 = "BBC ABCDAB ABCDABCDABDE";
+//		String str1 = "BBC ABCDAB ABCDABCDABDE";
+		String str1 = "ABCDABDABCDABDABCDABD"; //从0开始查找
 		String str2 = "ABCDABD";
 		//String str2 = "BBC";
 		
-		int[] next = kmpNext("ABCDABD"); //[0, 1, 2, 0]
+		int[] next = kmpNext("ABCDABD"); //=[0, 0, 0, 0, 1, 2, 0]
 		System.out.println("next=" + Arrays.toString(next));
 		
 		int index = kmpSearch(str1, str2, next);
@@ -35,7 +36,7 @@ public class KMPAlgorithm {
 			//需要处理 str1.charAt(i) ！= str2.charAt(j), 去调整j的大小
 			//KMP算法核心点, 可以验证...
 			while( j > 0 && str1.charAt(i) != str2.charAt(j)) {
-				j = next[j-1]; 
+				j = next[j-1]; // 为什么该值
 			}
 			
 			if(str1.charAt(i) == str2.charAt(j)) {

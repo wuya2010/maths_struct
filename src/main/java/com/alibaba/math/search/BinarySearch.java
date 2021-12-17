@@ -7,6 +7,11 @@ import java.util.List;
 public class BinarySearch {
 
 	public static void main(String[] args) {
+
+		/**
+		 * 使用二分查找的前提是 该数组是有序的
+		 */
+
 		//int arr[] = { 1, 8, 10, 89,1000,1000, 1234 };
 		int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 , 11, 12, 13,14,15,16,17,18,19,20 };
 		
@@ -80,6 +85,9 @@ public class BinarySearch {
 		} else if (findVal < midVal) { // 向左递归
 			return binarySearch2(arr, left, mid - 1, findVal);
 		} else {
+
+			// 如果刚好找到了所在的 index
+
 //			 * 思路分析
 //			 * 1. 在找到mid 索引值，不要马上返回
 //			 * 2. 向mid 索引值的左边扫描，将所有满足 1000， 的元素的下标，加入到集合ArrayList
@@ -88,8 +96,11 @@ public class BinarySearch {
 			
 			List<Integer> resIndexlist = new ArrayList<Integer>();
 			//向mid 索引值的左边扫描，将所有满足 1000， 的元素的下标，加入到集合ArrayList
+
+			//向左边
 			int temp = mid - 1;
 			while(true) {
+				// 不等就中段
 				if (temp < 0 || arr[temp] != findVal) {//退出
 					break;
 				}

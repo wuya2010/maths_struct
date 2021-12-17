@@ -5,6 +5,11 @@ package com.alibaba.math.avl;
 public class AVLTreeDemo {
 
 	public static void main(String[] args) {
+
+		/**
+		 * 平衡二叉搜索树（Self-balancing binary search tree）又被称为AVL树
+		 */
+
 		//int[] arr = {4,3,6,5,7,8};
 		//int[] arr = { 10, 12, 8, 9, 7, 6 };
 		int[] arr = { 10, 11, 7, 6, 8, 9 };  

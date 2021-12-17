@@ -16,7 +16,13 @@ import java.util.Map;
 public class HuffmanCode {
 
 	public static void main(String[] args) {
-		
+
+		/**
+		 *  霍夫曼编码使用变长编码表对源符号（如文件中的一个字母）进行编码
+		 */
+
+
+
 		//测试压缩文件
 //		String srcFile = "d://Uninstall.xml";
 //		String dstFile = "d://Uninstall.zip";

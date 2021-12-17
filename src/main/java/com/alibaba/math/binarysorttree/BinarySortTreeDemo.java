@@ -3,6 +3,12 @@ package com.alibaba.math.binarysorttree;
 public class BinarySortTreeDemo {
 
 	public static void main(String[] args) {
+
+		/**
+		 * 二叉排序树
+		 */
+
+
 		int[] arr = {7, 3, 10, 12, 5, 1, 9, 2};
 		BinarySortTree binarySortTree = new BinarySortTree();
 		//循环的添加结点到二叉排序树

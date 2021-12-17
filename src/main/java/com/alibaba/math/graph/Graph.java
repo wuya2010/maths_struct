@@ -13,6 +13,11 @@ public class Graph {
 	private boolean[] isVisited;
 	
 	public static void main(String[] args) {
+
+		/**
+		 * 创建图
+		 */
+
 		//测试一把图是否创建ok
 		int n = 8;  //结点的个数
 		//String Vertexs[] = {"A", "B", "C", "D", "E"};

@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class ArrayQueueDemo {
 
 	public static void main(String[] args) {
+
+		/**
+		 * 队列
+		 */
+
 		//测试一把
 		//创建一个队列
 		ArrayQueue queue = new ArrayQueue(3);
@@ -71,13 +76,13 @@ class ArrayQueue {
 	public ArrayQueue(int arrMaxSize) {
 		maxSize = arrMaxSize;
 		arr = new int[maxSize];
-		front = -1; // 指向队列头部，分析出front是指向队列头的前一个位置.
-		rear = -1; // 指向队列尾，指向队列尾的数据(即就是队列最后一个数据)
+		front = -1; // 对应数组角标0 ； 指向队列头部，分析出front是指向队列头的前一个位置.
+		rear = -1; // 对应数组角标0 ； 指向队列尾，指向队列尾的数据(即就是队列最后一个数据)
 	}
 
 	// 判断队列是否满
 	public boolean isFull() {
-		return rear == maxSize - 1;
+		return rear == maxSize - 1;  //fixme: 最后一个数据写入后， rear 与 数组下角标相同
 	}
 
 	// 判断队列是否为空
@@ -94,6 +99,14 @@ class ArrayQueue {
 		}
 		rear++; // 让rear 后移
 		arr[rear] = n;
+
+		/*
+			添加数据：
+			arr[0]=1
+			arr[1]=5
+			arr[2]=8
+		 */
+
 	}
 
 	// 获取队列的数据, 出队列
@@ -105,6 +118,21 @@ class ArrayQueue {
 		}
 		front++; // front后移
 		return arr[front];
+
+		/**
+		 * 取数是逐个取出
+		 *
+		 * arr[0]=1
+		 * arr[1]=5
+		 * arr[2]=3
+		 * s(show): 显示队列
+		 * e(exit): 退出程序
+		 * a(add): 添加数据到队列
+		 * g(get): 从队列取出数据
+		 * h(head): 查看队列头的数据
+		 * g
+		 * 取出的数据是1
+		 */
 
 	}
 

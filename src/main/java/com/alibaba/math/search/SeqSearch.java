@@ -3,6 +3,11 @@ package com.alibaba.math.search;
 public class SeqSearch {
 
 	public static void main(String[] args) {
+
+		/**
+		 * 遍历数组进行比较，相同就返回
+		 */
+
 		int arr[] = { 1, 9, 11, -1, 34, 89 };// 没有顺序的数组
 		int index = seqSearch(arr, -11);
 		if(index == -1) {

@@ -3,6 +3,11 @@ package com.alibaba.math.recursion;
 public class MiGong {
 
 	public static void main(String[] args) {
+
+		/**
+		 * 递归循环
+		 */
+
 		// 先创建一个二维数组，模拟迷宫
 		// 地图
 		int[][] map = new int[8][7];

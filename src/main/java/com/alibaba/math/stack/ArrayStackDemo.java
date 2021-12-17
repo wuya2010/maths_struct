@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class ArrayStackDemo {
 
 	public static void main(String[] args) {
+
+		/**
+		 * 堆栈的使用
+		 */
+
 		//测试一下ArrayStack 是否正确
 		//先创建一个ArrayStack对象->表示栈
 		ArrayStack stack = new ArrayStack(4);

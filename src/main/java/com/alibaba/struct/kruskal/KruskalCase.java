@@ -11,6 +11,7 @@ public class KruskalCase {
 	private static final int INF = Integer.MAX_VALUE;
 	
 	public static void main(String[] args) {
+
 		char[] vertexs = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
 		//克鲁斯卡尔算法的邻接矩阵  
 	      int matrix[][] = {
